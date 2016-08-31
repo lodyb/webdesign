@@ -1,0 +1,173 @@
+*{
+    box-sizing:border-box;
+    /*outline:1px solid rgba(255,0,85,0.5);*/
+}
+html{
+    background:#1b1b1b;
+}
+body{
+    padding:0;
+    margin:0;
+    font:18px/24px 'Open Sans', 'Helvectica', 'Tahoma', 'Droid Sans', sans-serif;
+}
+p{
+    margin:0;
+}
+.row{
+    padding:1rem 0;
+}
+
+header{
+    background:-webkit-radial-gradient(top left,#2980B9,#282741);
+    background:radial-gradient(top left,#2980B9,#282741);
+    color:#fff;
+    padding-bottom:1rem;
+    box-shadow:0 12px 24px 4px rgba(0,0,0,0.5);
+}
+header .hero,
+header .spotlight{
+    text-align:center;
+}
+header .spotlight{
+    font-size:0;
+    margin:0 auto;
+    max-width:48rem;
+}
+header .spotlight figure{
+    display:inline-block;
+    width:calc(100% / 3 - (4rem / 1.5));
+    font-size:1rem;
+    margin:0;
+}
+header .spotlight figure+figure{
+    margin-left:4rem;
+}
+header .spotlight figure>.spot-img{
+    width:100%;
+    padding-top:100%;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    border-radius:2px;
+    box-shadow:0 0 0 1px rgba(255,255,255,0.1) inset,
+    0 0 0 2px rgba(0,0,0,0.2);
+}
+header .spotlight figure>figcaption{
+    padding-top:0.5rem;
+    font-size:0.8rem;
+}
+header .top{
+    margin:0 auto;
+    max-width:48rem;
+    padding-top:1rem;
+}
+header .logo{
+    display:inline-block;
+    vertical-align:middle;
+}
+header .logo svg{
+    width:5rem;
+    height:5rem;
+    top:1rem;
+    position:absolute;
+}
+header .logo svg #top{
+    fill:rgba(255,255,255,0.5);
+}
+header .logo svg #left{
+    fill:rgba(255,255,255,0.95);
+}
+header .logo svg #right{
+    fill:rgba(255,255,255,0.75);
+}
+header .social{
+    display:inline-block;
+    text-align:right;
+    vertical-align:middle;
+    float:right;
+    font-size:0;
+}
+header .social>a{
+    display:inline;
+    font-size:1rem;
+    text-align:left;
+    text-decoration:none;
+    color:#fff;
+    background:rgba(0,0,0,0.2);
+    padding:0.25rem 0.5rem;
+    border-radius:2px;
+}
+header .social>a+a{
+    margin-left:1rem;
+}
+main{
+    outline:1px solid #fff;
+    outline-offset:0rem;
+    background:#fff;
+    padding:2.5rem 2rem;
+    max-width:48rem;
+    margin:2rem auto;
+    box-shadow:0 8px 24px 4px rgba(0,0,0,0.5);
+}
+footer{
+    color:#888;
+    text-align:center;
+    font-size:0.8rem;
+}
+footer p{
+    display:inline-block;
+    background:linear-gradient(to bottom,#444,#2a2a2a);
+    padding:0 0.8rem;
+    border-radius:2px;
+}
+h1{
+    font-weight:200;
+    font-size:3rem;
+}
+h2{
+    font-weight:200;
+    font-size:2rem;
+    margin:0 0 2rem 0;
+}
+
+main form{
+    display:block;
+    margin-top:2rem;
+    text-align:center;
+    padding:1rem;
+    margin:2rem auto 0 auto;
+    background:linear-gradient(to bottom,#FFBE53,#FF6138);
+    max-width:20rem;
+    width:100%;
+    box-shadow:0 0 0 1px rgba(0,0,0,0.2) inset;
+}
+main form label{
+    display:block;
+    font-size:1.2rem;
+    text-align:left;
+    color:#BB331A;
+}
+main form input{
+    display:block;
+    font-size:1rem;
+    margin:0.3rem auto 0 auto;
+    border:0;
+    outline:0;
+    width:100%;
+    box-shadow:0 0 0 1px rgba(0,0,0,0.2);
+    padding:0.6rem 0.5rem;
+}
+main form input[type=submit]{
+    display:block;
+    font-size:1.4rem;
+    margin:1rem auto 0 auto;
+    padding:0.5rem 2rem;
+    width:100%;
+    background:#FFCCAA;
+    color:#BB331A;
+    cursor:pointer;
+    transition:background 0.2s ease;
+}
+main form input[type=submit]:hover{
+    background:#FFEEEE;
+}
